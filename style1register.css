@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+@font-face {
+    font-family: 'BeaufortforLOL';
+    src: url('BeaufortforLOL-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'BeaufortforLOL';
+    src: url('BeaufortforLOL-MediumItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #dfdfdf;
+}
+
+.login-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 440px;
+    height: 480px;
+    padding: 30px;
+    background-color: #dfdfdf;/* Dark background for the box */
+    border-radius: 10px;
+}
+
+.login-header {
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+.login-header header {
+    font-family: 'BeaufortforLOL', Arial, sans-serif;
+    color: #222; /* White text */
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.input-box .input-field {
+    width: 100%;
+    height: 60px;
+    font-size: 17px;
+    padding: 0 25px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.05);
+    outline: none;
+    transition: .3s;
+    font-family: 'BeaufortforLOL', Arial, sans-serif;
+}
+
+::placeholder {
+    font-weight: 500;
+    color: #222; /* Lighter gray for placeholder text */
+}
+
+.input-field:focus {
+    width: 105%;
+}
+
+.forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #000; /* Gold color similar to first code */
+}
+
+#check {
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section a {
+    color: #000; /* Gold color */
+}
+
+.input-submit {
+    position: relative;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 60px;
+    background: #222222; /* Dark background */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+    font-family: 'BeaufortforLOL', Arial, sans-serif;
+    color: #ffffff; /* White text */
+}
+
+.submit-btn:hover {
+    background: #000;
+    transform: scale(1.05, 1);
+}
+
+.sign-up-link {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.sign-up-link a {
+    color: #000; /* Gold color for links */
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background-color: #0a0c0f; /* Dark background */
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #ffffff; /* White text */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo a:hover {
+    background-color: transparent !important;
+    cursor: default !important;
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #000; /* Dark background */
+    transition: top 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+
+.navigation a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'BeaufortforLOL', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    background-color: gray;
+}
+
+.navigation a:hover:not(.lologo) {
+    background-color: gray;
+}
